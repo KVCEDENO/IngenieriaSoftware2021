@@ -55,7 +55,7 @@ public class Validacion {
     public boolean validarTextoNumero(String nombreCampo, JTextField campo){
 
         if(!validarExpresion("ALF", campo)){
-            JOptionPane.showMessageDialog(null,"El campo "+ nombreCampo + " solo permite letras, numeros, espacios y guiones","Validacion de informacion",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null,"El campo "+ nombreCampo + " solo permite letras, numeros, espacios y guiones.","Validacion de informacion",JOptionPane.WARNING_MESSAGE);
             return false;
         } else {
             return true;
