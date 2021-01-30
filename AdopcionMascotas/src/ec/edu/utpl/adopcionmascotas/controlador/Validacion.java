@@ -61,6 +61,15 @@ public class Validacion {
             return true;
         }
     }
+
+    private static boolean isNumeric(String cadena){
+        try {
+            Integer.parseInt(cadena);
+            return true;
+        } catch (NumberFormatException nfe){
+            return false;
+        }
+    }
     
     public boolean validarExpresion(String tipoExpresion, JTextField... listaCampos){
         
